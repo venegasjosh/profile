@@ -97,6 +97,7 @@ figure {
     width: 150px;
     height: 150px;
     margin: 0 auto;
+    margin-right: 90px;
     margin-bottom: 30px;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -1017,7 +1018,7 @@ body.offcanvas {
     opacity: 1; }
     .project:hover .desc h3 {
       -webkit-transform: translate3d(0, 0, 0);
-      transform: translate3d(0, 0, 0); }
+      transform: translate3d(0, 0, 0); }f
     .project:hover .desc span {
       -webkit-transform: translate3d(0, 0, 0);
       transform: translate3d(0, 0, 0); }
