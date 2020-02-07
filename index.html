@@ -44,6 +44,8 @@
 
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
+	<script src="https://smtpjs.com/v3/smtp.js"></script>
+	<script src="js/sendEmail.js"></script>
 	<!-- FOR IE9 below -->
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
@@ -99,7 +101,7 @@
 					   			<div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
 					   				<div class="slider-text-inner js-fullheight">
 					   					<div class="desc">
-						   					<h1>I'm Joshua Venegas. <br>A Full Stack Engineer.</h1>
+						   					<h1>Full Stack Developer<br><br>Bay Area Native</h1>
 												<p><a class="btn btn-danger btn-learn" >Download Resume <i class="icon-download4"></i></a></p>
 											</div>
 					   				</div>
@@ -114,7 +116,6 @@
 					   			<div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
 					   				<div class="slider-text-inner">
 					   					<div class="desc">
-						   					<h1>Intuative, <br>Responsive, <br> Creative Designs</h1>
 												<p><a class="btn btn-primary btn-learn">View Projects <i class="icon-briefcase3"></i></a></p>
 											</div>
 					   				</div>
@@ -655,21 +656,21 @@
 						<div class="col-md-7 col-md-push-1">
 							<div class="row">
 								<div class="col-md-10 col-md-offset-1 col-md-pull-1 animate-box" data-animate-effect="fadeInRight">
-									<form action="">
+									<form action="mailto:venegasjosh@gmail.com" method="post" enctype="text/plain">
 										<div class="form-group">
-											<input type="text" class="form-control" placeholder="Name">
+											<input type="text" class="form-control" placeholder="Name" id="name1">
 										</div>
 										<div class="form-group">
-											<input type="text" class="form-control" placeholder="Email">
+											<input type="text" class="form-control" placeholder="Email" id="email1">
 										</div>
 										<div class="form-group">
-											<input type="text" class="form-control" placeholder="Subject">
+											<input type="text" class="form-control" placeholder="Subject" id="subject1">
 										</div>
 										<div class="form-group">
-											<textarea name="" id="message" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+											<textarea cols="30" rows="7" class="form-control" id="message1" placeholder="Message"></textarea>
 										</div>
 										<div class="form-group">
-											<input type="submit" class="btn btn-primary btn-send-message" value="Send Message">
+											<input type="button" class="btn btn-primary btn-send-message" value="Send Message" onclick="sendEmail()">
 										</div>
 									</form>
 								</div>
